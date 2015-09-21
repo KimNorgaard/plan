@@ -1,0 +1,169 @@
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+article, body, div, figcaption, figure, form, h1, h2, h3, h4, html, img, label, li, nav, p, span, strong, ul {
+  font-size: 100%;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  background: 0 0;
+}
+
+body {
+  font-size: 100%;
+  /*font-family: 'Proxima Nova Regular', 'Segoe UI', Roboto, 'Droid Sans', 'Helvetica Neue', Arial, sans-serif;*/
+  font-family: 'PT Serif', serif;
+  color: rgb(51, 51, 51);
+  background: #f4ebd3;
+  padding: 5em 0;
+}
+
+#page {
+  width: 95%;
+  max-width: 960px;
+  margin: 0 auto;
+  font-size: 1em;
+  line-height: 1.25em;
+  padding-top: 0;
+  overflow: hidden;
+}
+
+
+@media (min-width: 43.75em) {
+  #page {
+    font-size: 1em;
+    line-height: 1.375;
+  }
+}
+
+@media (min-width: 43.75em) {
+  #page {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 56.25em) {
+  #page {
+    max-width: 1400px;
+  }
+}
+
+
+header {
+  margin-bottom: 4em;
+}
+
+header h1 {
+  color: #b00000;
+  Xfont-family: "Skolar Bold","Segoe UI Bold","Roboto Slab","Droid Serif",AvenirNext-Bold,"Avenir Bold",Georgia,"Times New Roman",Times,serif;
+  font-family: 'PT Serif', serif;
+  font-weight: 700;
+  font-style: normal;
+  Xmargin: 10px 0;
+  Xpadding: 10px 10px;
+  font-size: 3em;
+  line-height: 1.1em;
+  text-align: center;
+}
+
+a.icon-fb  { background-image: url('img/facebook-32.png'); }
+a.icon-gh  { background-image: url('img/github-32.png'); }
+a.icon-li  { background-image: url('img/linkedin-32.png'); }
+a.icon-gp  { background-image: url('img/googleplus-32.png'); }
+a.icon-rss { background-image: url('img/rss-32.png'); }
+
+p, p img {
+  padding: .5em 0;
+}
+
+img {
+  border: 0;
+  max-width: 100%;
+  height: auto;
+}
+
+section {
+  clear: both;
+}
+
+#intro {
+  font-weight: bold;
+}
+
+.entry a {
+  color: black;
+  text-decoration: none;
+  font-style: italic;
+  Xtext-transform: uppercase !important;
+}
+
+.date {
+  font-style: italic;
+}
+
+article {
+  margin: 0px auto;
+}
+
+
+@media (min-width: 43.75em) {
+  #page {
+    max-width: 36em;
+  }
+}
+@media (min-width: 56.25em) {
+  #page {
+    max-width: 38em;
+  }
+}
+
+article h3 {
+  Xfont-size: 1.5em;
+  Xline-height: 1.3em;
+  font-family: 'Proxima Nova Bold',"Segoe UI",Roboto,"Droid Sans","Helvetica Neue",Arial,sans-serif;
+  font-family: 'PT Serif', serif;
+  font-style: normal;
+  font-weight: 700;
+  padding: 1.5em 0 .5em;
+  text-transform: capitalize;
+  letter-spacing: .125em;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+article div.entry {
+  Xpadding-bottom: 10px;
+}
+
+
+article div.entry p {
+}
+
+article div.entry p:first-child {
+  Xmargin-top: 3px;
+}
+
+footer {
+  margin-top: 2em;
+  letter-spacing: .5em;
+  display: block;
+  text-align: center;
+}
+

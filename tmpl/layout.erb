@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>jasen.dk</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic">
+  </head>
+  <body>
+    <div id="page"><!--content width page-->
+    <header>
+      <h1>.plan</h1>
+    </header>
+    <div id="intro">
+      These are thoughts about nothing in particular conjured up by yours truly. Mind the gaps.
+    </div>
+    <section id="content" class="clearfix"><!--main site content-->
+    <% for @entry in @entries.sort_by { |k| k[:timestamp] }.reverse %>
+    <article>
+      <h3><%= @entry[:title] %></h3>
+      <div class="date"><%= @entry[:datetime] %></div>
+      <div class="entry"><%= @entry[:truncated_content] %></div>
+    </article>
+    <% end %>
+    </section><!--end content-->
+    <footer>***</footer>
+  </div> <!--end page-->
+  </body>
+</html>
